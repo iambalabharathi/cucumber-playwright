@@ -1,4 +1,4 @@
-# cucumber-playwright
+# osp-ui-js-framework
 
 A starter repo for writing E2E tests based on Cucumber(7) with Playwright using Typescript.
 
@@ -72,10 +72,6 @@ $ npm run report
 - Utilies function to help you with writing steps
 - VScode configuration to debug a single feature or an only scenario (run when located on the feature file)
 
-## **Kudos 👏🏼**
-
-This repository is based on the [cucumber-typescript-starter](https://github.com/Tallyb/cucumber-playwright) repo.
-
 ## **Debugging Features**
 
 ### From CLI
@@ -91,3 +87,7 @@ This repository is based on the [cucumber-typescript-starter](https://github.com
 - Set breakpoints in the code
 
 To stop the feature, you can add the `Then debug` step inside your feature. It will stop your debugger.
+
+## **Kudos 👏🏼**
+
+This repository is based on the [cucumber-typescript-starter](https://github.com/Tallyb/cucumber-playwright) repo.

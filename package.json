@@ -1,5 +1,5 @@
 {
-  "name": "cucumber-playwright",
+  "name": "osp-ui-js-framework",
   "version": "1.2.0",
   "description": "Starter project to write and debug cucumber-js features with Playwright",
   "main": "index.js",
@@ -30,9 +30,6 @@
   },
   "author": "Tally Barak",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tallyb/cucumber-playwright/issues"
-  },
   "homepage": "https://github.com/tallyb/cucumber-playwright#readme",
   "dependencies": {
     "@cucumber/cucumber": "7.3.1",
@@ -42,7 +39,7 @@
     "cucumber-console-formatter": "1.0.0",
     "cucumber-html-reporter": "5.5.0",
     "expect": "27.4.2",
-    "playwright": "1.17.1"
+    "playwright": "^1.17.1"
   },
   "devDependencies": {
     "@types/expect": "24.3.0",
