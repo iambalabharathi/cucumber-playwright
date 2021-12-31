@@ -14,10 +14,13 @@ build+test: # This job runs in the build stage, which runs first.
   stage: build
   image: mcr.microsoft.com/playwright:focal
   before_script:
+    - echo "Install dependencies"
     - npm install
   script:
+    - echo "Executing tests"
     - npm run test
   after_script:
+    - echo "Create XML report"
     - npm run report-xml
   artifacts:
     when: always
