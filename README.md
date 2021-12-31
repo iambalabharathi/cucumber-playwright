@@ -1,69 +1,40 @@
 # cucumber-playwright
 
-![Test](https://github.com/Tallyb/cucumber-playwright/workflows/Test/badge.svg)
-
 A starter repo for writing E2E tests based on Cucumber(7) with Playwright using Typescript.
 
-## Kudos
-
-This repository is based on the [Cucumber-typescript-starter](https://github.com/hdorgeval/cucumber7-ts-starter/blob/main/package.json) repo.
-
-## What's inside
-
-- Typescript setup for writing steps with eslint/typescript and prettier
-- Launching of Playwright browser before running all tests
-- Launching new context and page for each scenario
-- Running feature with video recording option
-- Report generated with last good image attached
-- Utilies function to help you with writing steps
-- VScode configuration to debug a single feature or an only scenario (run when located on the feature file)
-
-## Usage
+## **Usage**
 
 Create a repo based on this template and start writing your tests.
 
-## To run your tests
+## **To Run 🏁**
 
-`npm run test` or `npx cucumber-js` runs all tests
-`npm run test <feature name>` or `npx cucumber-js <feature name>` run the single feature
+All tests
 
-## Browser selection
-
-By default we will use chromium. You can define an envrionment variable called BROWSER and
-set the name of the browser. Available options: chromium, firefox, webkit
-
-On Linux and Mac you can write:
-
-`BROWSER=firefox npm run test` or `BROWSER=firefox npx cucumber-js` runs all tests using Firefox
-
-One Windows you need to write
-
-```
-set BROWSER=firefox
-npm run test
+```bash
+$ npm run test
 ```
 
-## Working with Page Objects
+Run a single feature
 
-I am not fond of the Page Object Model (POM) for testing. It feels like a leftover from Java world, and I do not think it fits the Javascript world. However, you can check [this PR](https://github.com/Tallyb/cucumber-playwright/pull/95/files) to see POM implementation. 
+```bash
+npm run test <feature name>
+```
 
-## Debugging Features
+## **Browser Options**
 
-### From CLI
+By default we will use chromium.
 
-- `npm run debug` - headful mode with APIs enables both APIs and debug options
-- `npm run api` - headless mode with debug apis
-- `npm run video` - headless mode vith video
+You can define an envrionment variable called `BROWSER` and
+set the name of the browser.
 
-## In Visual Studio Code
+Available options: `chromium, firefox, webkit`
 
-- Open the feature
-- Select the debug options in the VSCode debugger
-- Set breakpoints in the code
+```
+$ export BROWSER=firefox
+$ npm run test
+```
 
-To stop the feature, you can add the `Then debug` step inside your feature. It will stop your debugger.
-
-## To choose a reporter
+## **Reporter**
 
 The last reporter/formatter found on the cucumber-js command-line wins:
 
@@ -73,18 +44,50 @@ The last reporter/formatter found on the cucumber-js command-line wins:
 
 In [cucumber.js](cucumber.js) file, modify the options.
 
-## To ignore a scenario
+### To check for typescript, linting and gherkin errors
 
-- tag the scenario with `@ignore`
+```bash
+$ npm run build
+```
 
-## To check for typescript, linting and gherkin errors
+### To view Steps Usage
 
-- run the command `npm run build`.
+```bash
+$ npm run steps-usage
+```
 
-## To view the steps usage
+### To view the html report of the last run
 
-- run the command `npm run steps-usage`.
+```bash
+$ npm run report
+```
 
-## To view the html report of the last run
+## **What's inside**
 
-- run the command `npm run report`.
+- Typescript setup for writing steps with eslint/typescript and prettier
+- Launching of Playwright browser before running all tests
+- Launching new context and page for each scenario
+- Running feature with video recording option
+- Report generated with last good image attached
+- Utilies function to help you with writing steps
+- VScode configuration to debug a single feature or an only scenario (run when located on the feature file)
+
+## **Kudos 👏🏼**
+
+This repository is based on the [cucumber-typescript-starter](https://github.com/Tallyb/cucumber-playwright) repo.
+
+## **Debugging Features**
+
+### From CLI
+
+- `npm run debug` - headful mode with APIs enables both APIs and debug options
+- `npm run api` - headless mode with debug apis
+- `npm run video` - headless mode vith video
+
+## **In Visual Studio Code**
+
+- Open the feature
+- Select the debug options in the VSCode debugger
+- Set breakpoints in the code
+
+To stop the feature, you can add the `Then debug` step inside your feature. It will stop your debugger.
