@@ -7,9 +7,10 @@ variables:
   REPORTS_FOLDER: './reports'
 
 stages: # List of stages for jobs, and their order of execution
+  - build
   - slack
 
-build-test: # This job runs in the build stage, which runs first.
+build+test: # This job runs in the build stage, which runs first.
   stage: build
   image: mcr.microsoft.com/playwright:focal
   before_script:
