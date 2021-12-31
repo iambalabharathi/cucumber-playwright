@@ -62,6 +62,12 @@ $ npm run steps-usage
 $ npm run report
 ```
 
+### To get XML report of last run
+
+```bash
+$ npm run report-xml
+```
+
 ## **What's inside**
 
 - Typescript setup for writing steps with eslint/typescript and prettier
@@ -87,7 +93,3 @@ $ npm run report
 - Set breakpoints in the code
 
 To stop the feature, you can add the `Then debug` step inside your feature. It will stop your debugger.
-
-## **Kudos 👏🏼**
-
-This repository is based on the [cucumber-typescript-starter](https://github.com/Tallyb/cucumber-playwright) repo.
