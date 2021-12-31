@@ -22,10 +22,6 @@ build+test: # This job runs in the build stage, which runs first.
   after_script:
     - echo "Create XML report"
     - npm run report-xml
-  rules:
-    - changes:
-        - '*.md'
-      when: never
   artifacts:
     when: always
     expire_in: 2 days
