@@ -20,7 +20,7 @@
     "all": "cucumber-js features/**/*.feature",
     "test": "cucumber-js",
     "test:parallel": "cucumber-js --parallel=2",
-    "report-xml": "rm -f reports/junit-xml-report.xml && node src/utils/jsonToXmlConverter.js junit-xml-report"
+    "report-xml": "rm -f reports/junit-xml-report.xml && node jsonToXmlConverter.js junit-xml-report"
   },
   "engines": {
     "node": ">=14"
